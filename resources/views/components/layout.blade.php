@@ -234,7 +234,7 @@
 
                 <nav class="nav flex-column gap-1">
                     <div class="nav-section">Overview</div>
-                    <a class="nav-link active" href="#"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
+                    <a class="nav-link active" href="/dashboard"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
 
                     <div class="nav-section">Catalog</div>
 
@@ -249,7 +249,6 @@
                                 <div class="accordion-body">
                                     <a href="products" class="submenu-link">All Products</a>
                                     <a href="products/create" class="submenu-link">Add Product</a>
-                                    <a href="#" class="submenu-link">Inventory</a>
                                 </div>
                             </div>
                         </div>

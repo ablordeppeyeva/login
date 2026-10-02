@@ -7,7 +7,7 @@
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <div>
                                 <div class="stat-label">Total Users</div>
-                                <div class="stat-number">1,284</div>
+                                <div class="stat-number"></div>
                             </div>
                             <div class="bg-white bg-opacity-15 rounded-4 p-3">
                                 <i class="bi bi-people-fill fs-4"></i>
@@ -24,24 +24,24 @@
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <div>
                                 <div class="stat-label">Products</div>
-                                <div class="stat-number">842</div>
+                                <div class="stat-number"></div>
                             </div>
                             <div class="bg-white bg-opacity-15 rounded-4 p-3">
                                 <i class="bi bi-box-seam-fill fs-4"></i>
                             </div>
                         </div>
-                        <div class="stat-meta"><i class="bi bi-check-circle"></i> Active stock</div>
+                        {{-- <div class="stat-meta"><i class="bi bi-check-circle"></i> Active stock</div> --}}
                     </div>
                 </div>
             </div>
 
-            <div class="col-xl-4 col-md-6">
+            {{-- <div class="col-xl-4 col-md-6">
                 <div class="card stat-card warning h-100">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <div>
                                 <div class="stat-label">Categories</div>
-                                <div class="stat-number">28</div>
+                                <div class="stat-number"></div>
                             </div>
                             <div class="bg-white bg-opacity-15 rounded-4 p-3">
                                 <i class="bi bi-grid-fill fs-4"></i>
@@ -50,10 +50,10 @@
                         <div class="stat-meta"><i class="bi bi-tags-fill"></i> Organized</div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
-        <div class="row g-4">
+        {{-- <div class="row g-4">
             <div class="col-xl-8">
                 <div class="content-panel p-4">
                     <div class="d-flex justify-content-between align-items-center mb-4">
@@ -122,6 +122,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>// --}}
     </div>
 </x-layout>
