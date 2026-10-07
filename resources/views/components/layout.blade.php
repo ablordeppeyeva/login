@@ -228,8 +228,8 @@
         <div class="app-shell">
             <aside class="sidebar">
                 <div class="brand">
-                    <span class="brand-mark"><i class="bi bi-speedometer2"></i></span>
-                    <span>Nova Admin</span>
+                    <span class="brand-mark"><i class="bi bi-airplane me-2"></i></span>
+                    <span>EveAirline </span>
                 </div>
 
                 <nav class="nav flex-column gap-1">

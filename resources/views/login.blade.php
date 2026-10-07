@@ -1,26 +1,114 @@
 <x-layout>
-    <div style="max-width: 420px; margin: 4rem auto;">
-        <h1>Login</h1>
 
-        <form method="POST" action="{{ route('login.process') }}">
-            @csrf
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" value="{{ old('email') }}" required>
+<div class="container d-flex justify-content-center align-items-center"
+     style="min-height: 90vh;">
 
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required>
+    <div class="card shadow-sm border-0"
+         style="width: 100%; max-width: 430px; border-radius: 15px;">
 
-            <label for="remember">
-                <input type="checkbox" id="remember" name="remember" {{ old('remember') ? 'checked' : '' }}>
-                Remember me
-            </label>
+        <div class="card-body p-5">
 
-            <div>
-                <button type="submit">Log in</button>
+            <!-- Heading -->
+            <div class="text-center mb-4">
+                <h1 class="fw-bold mb-2">Welcome Back</h1>
+                <p class="text-muted">
+                    Login to continue to your account
+                </p>
             </div>
-        </form>
 
-        <p>Need an account? <a href="{{ route('register') }}">Create one</a></p>
+            <!-- Error Messages -->
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    @foreach ($errors->all() as $error)
+                        <div>{{ $error }}</div>
+                    @endforeach
+                </div>
+            @endif
+
+            <form method="POST" action="{{ route('login.process') }}">
+                @csrf
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email"
+                           class="form-label fw-semibold">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        value="{{ old('email') }}"
+                        placeholder="Enter your email"
+                        style="height: 45px;"
+                        required
+                    >
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                    <label for="password"
+                           class="form-label fw-semibold">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="Enter your password"
+                        style="height: 45px;"
+                        required
+                    >
+                </div>
+
+                <!-- Remember Me -->
+                <div class="form-check mb-4">
+
+                    <input
+                        type="checkbox"
+                        id="remember"
+                        name="remember"
+                        class="form-check-input"
+                        {{ old('remember') ? 'checked' : '' }}
+                    >
+
+                    <label class="form-check-label"
+                           for="remember">
+                        Remember me
+                    </label>
+
+                </div>
+
+                <!-- Login Button -->
+                <button
+                    type="submit"
+                    class="btn btn-primary w-100 py-2 fw-semibold"
+                    style="border-radius: 8px;">
+                    Log in
+                </button>
+
+            </form>
+
+            <!-- Register -->
+            <div class="text-center mt-4">
+                <p class="text-muted mb-0">
+                    Need an account?
+                    <a href="{{ route('register') }}"
+                       class="text-primary fw-semibold text-decoration-none">
+                        Create one
+                    </a>
+                </p>
+            </div>
+
+        </div>
     </div>
+
+</div>
+
+
 </x-layout>

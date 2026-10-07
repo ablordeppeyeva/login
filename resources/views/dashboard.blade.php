@@ -7,13 +7,13 @@
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <div>
                                 <div class="stat-label">Total Users</div>
-                                <div class="stat-number"></div>
+                                 <div class="stat-number">{{ $totalUsers }}</div>
                             </div>
                             <div class="bg-white bg-opacity-15 rounded-4 p-3">
                                 <i class="bi bi-people-fill fs-4"></i>
                             </div>
                         </div>
-                        <div class="stat-meta"><i class="bi bi-arrow-up-right"></i> +12.4%</div>
+                   
                     </div>
                 </div>
             </div>
@@ -23,8 +23,8 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <div>
-                                <div class="stat-label">Products</div>
-                                <div class="stat-number"></div>
+                                <div class="stat-label">Total Products</div>
+                                <div class="stat-number">{{ $totalProducts }}</div>
                             </div>
                             <div class="bg-white bg-opacity-15 rounded-4 p-3">
                                 <i class="bi bi-box-seam-fill fs-4"></i>

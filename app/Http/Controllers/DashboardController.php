@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\RedirectResponse;
+use App\Models\Product;
+use App\Models\User;
 use Illuminate\View\View;
 
 class DashboardController extends Controller
 {
-    public function index(): View|RedirectResponse
+    public function index(): View
     {
-        return view('dashboard');
+        return view('dashboard', [
+            'totalProducts' => Product::count(),
+            'totalUsers' => User::count(),
+        ]);
     }
 }
