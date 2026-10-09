@@ -5,6 +5,7 @@ use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 
 Route::get('/', function () {
     return redirect()->route('login');
@@ -22,3 +23,4 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
     ->middleware('auth');
 
 Route::resource('/products', ProductController::class)->middleware('auth');
+Route::resource('/categories', CategoryController::class)->middleware('auth');

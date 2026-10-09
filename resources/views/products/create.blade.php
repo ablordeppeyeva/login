@@ -36,12 +36,12 @@
 
                 <div class="col-md-6">
                     <label class="form-label fw-semibold">Price</label>
-                    <input type="number" name="price" step="0.01" value="{{ old('price') }}" class="form-control rounded-3" placeholder="0.00">
+                    <input type="number" name="price" step="0.01" value="{{ old('price') }}" class="form-control rounded-3" placeholder="0.00" min="0">
                 </div>
 
                 <div class="col-md-6">
                     <label class="form-label fw-semibold">Quantity</label>
-                    <input type="number" name="quantity" value="{{ old('quantity', 0) }}" class="form-control rounded-3" placeholder="0">
+                    <input type="number" name="quantity" value="{{ old('quantity', 0) }}" class="form-control rounded-3" placeholder="0" min="0">
                 </div>
 
                 <div class="col-12 d-flex justify-content-end gap-2 pt-2">
